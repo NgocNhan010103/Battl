@@ -73,9 +73,25 @@ public class Item
     public int DefenceBonus;
 }
 
+
+[System.Serializable]
+public class QuestData
+{
+    public int ID;
+    public string Name;
+    public string Description;
+    public int CurQuality;
+    public int Quality;
+    public int PointActive;
+    public int CoinsForClaim;
+    public QuestType QType;
+    public QuestState QState;
+    public bool IsClaimed;
+}
 public class UserData
 {
     public static UserDeepData data;
+
     public static void SaveData()
     {
         PlayerPrefs.SetString(GameData.PP_USER_DATA, JsonConvert.SerializeObject(data));

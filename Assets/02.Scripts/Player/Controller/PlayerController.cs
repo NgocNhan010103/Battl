@@ -41,6 +41,7 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
+        /*
         float healthRatio = entity.currentHealth / entity.maxHealth;
 
         if (healthRatio <= 0.3f)
@@ -50,7 +51,7 @@ public class PlayerController : MonoBehaviour
         else
         {
             warmingHP.color = new Color(warmingHP.color.r, warmingHP.color.g, warmingHP.color.b, 0f);
-        }
+        }*/
     }
 
 

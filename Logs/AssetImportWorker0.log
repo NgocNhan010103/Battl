@@ -15,7 +15,7 @@ C:/Battle Realms
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-64830
+59231
 Successfully changed project path to: C:/Battle Realms
 C:/Battle Realms
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ C:/Battle Realms
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [19252] Host "[IP] 192.168.1.11 [Port] 0 [Flags] 2 [Guid] 2773849514 [EditorId] 2773849514 [Version] 1048832 [Id] WindowsEditor(7,MSI) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [9664] Host "[IP] 192.168.1.2 [Port] 0 [Flags] 2 [Guid] 1684121676 [EditorId] 1684121676 [Version] 1048832 [Id] WindowsEditor(7,MSI) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [19252] Host "[IP] 192.168.1.11 [Port] 0 [Flags] 2 [Guid] 2773849514 [EditorId] 2773849514 [Version] 1048832 [Id] WindowsEditor(7,MSI) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [9664] Host "[IP] 192.168.1.2 [Port] 0 [Flags] 2 [Guid] 1684121676 [EditorId] 1684121676 [Version] 1048832 [Id] WindowsEditor(7,MSI) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 15 workers.
-Refreshing native plugins compatible for Editor in 12.02 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 493.70 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.20f1 (61c2feb0970d)
 [Subsystems] Discovering subsystems at path C:/Unity/2022.3.20f1/Editor/Data/Resources/UnitySubsystems
@@ -70,47 +70,56 @@ Initialize mono
 Mono path[0] = 'C:/Unity/2022.3.20f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Unity/2022.3.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Unity/2022.3.20f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56504
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56656
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Unity/2022.3.20f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Unity/2022.3.20f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.004549 seconds.
-- Loaded All Assemblies, in  0.281 seconds
+Registered in 0.005378 seconds.
+- Loaded All Assemblies, in  0.396 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 219 ms
+CommandWithNoStdoutInvokationFailure: Unable to start ADB server. Please make sure the Android SDK is installed and is properly configured in the Editor. See the Console for more details.
+  at UnityEditor.Android.Command.RunWithShellExecute (System.String command, System.String args, System.String workingdir, System.String errorMsg) [0x00060] in <350bddde343340be9c3b2ea115fe87e9>:0 
+  at UnityEditor.Android.ADB.StartServer () [0x00013] in <350bddde343340be9c3b2ea115fe87e9>:0 
+  at UnityEditor.Android.ADB.Run (System.String[] command, UnityEditor.Android.Command+WaitingForProcessToExit waitingForProcessToExit, System.String errorMsg) [0x0000b] in <350bddde343340be9c3b2ea115fe87e9>:0 
+  at UnityEditor.Android.AndroidDeploymentTargetsExtension.GetKnownTargets (UnityEditor.DeploymentTargets.IDeploymentTargetsMainThreadContext context, UnityEditor.ProgressHandler progressHandler) [0x00284] in <350bddde343340be9c3b2ea115fe87e9>:0 
+  at UnityEditor.Android.TargetScanWorker.ScanSync () [0x00039] in <350bddde343340be9c3b2ea115fe87e9>:0 
+  at UnityEditor.Android.TargetExtension.OnUsbDevicesChanged (UnityEditor.Hardware.UsbDevice[] usbDevices) [0x00081] in <350bddde343340be9c3b2ea115fe87e9>:0 
+  at UnityEditor.Android.TargetExtension.OnLoad () [0x000ad] in <350bddde343340be9c3b2ea115fe87e9>:0 
+  at UnityEditor.Modules.ModuleManager.InitializePlatformSupportModules () [0x0009d] in <5d5ebefe97114215928ac1d9cd096522>:0 
+
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.479 seconds
-Domain Reload Profiling: 759ms
-	BeginReloadAssembly (87ms)
+- Finished resetting the current domain, in  6.548 seconds
+Domain Reload Profiling: 6943ms
+	BeginReloadAssembly (103ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
 	RebuildCommonClasses (26ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (42ms)
-	LoadAllAssembliesAndSetupDomain (116ms)
-		LoadAssemblies (86ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (43ms)
+	LoadAllAssembliesAndSetupDomain (215ms)
+		LoadAssemblies (102ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (114ms)
-			TypeCache.Refresh (113ms)
-				TypeCache.ScanAssembly (102ms)
+		AnalyzeDomain (213ms)
+			TypeCache.Refresh (212ms)
+				TypeCache.ScanAssembly (201ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (479ms)
+	FinalizeReload (6548ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (432ms)
+		SetupLoadedEditorAssemblies (6504ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (304ms)
-			SetLoadedEditorAssemblies (5ms)
+			InitializePlatformSupportModulesInManaged (6368ms)
+			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (86ms)
-			ProcessInitializeOnLoadMethodAttributes (35ms)
+			ProcessInitializeOnLoadAttributes (93ms)
+			ProcessInitializeOnLoadMethodAttributes (36ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -118,8 +127,8 @@ Domain Reload Profiling: 759ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.525 seconds
-Refreshing native plugins compatible for Editor in 5.89 ms, found 3 plugins.
+- Loaded All Assemblies, in  2.353 seconds
+Refreshing native plugins compatible for Editor in 18.51 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 [MODES] ModeService[none].Initialize
@@ -136,547 +145,401 @@ Mono: successfully reloaded assembly
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  0.575 seconds
-Domain Reload Profiling: 1099ms
-	BeginReloadAssembly (117ms)
+- Finished resetting the current domain, in  1.140 seconds
+Domain Reload Profiling: 3490ms
+	BeginReloadAssembly (251ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (4ms)
+		DisableScriptedObjects (9ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (18ms)
-	RebuildCommonClasses (25ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (36ms)
-	LoadAllAssembliesAndSetupDomain (336ms)
-		LoadAssemblies (265ms)
+		CreateAndSetChildDomain (44ms)
+	RebuildCommonClasses (36ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (66ms)
+	LoadAllAssembliesAndSetupDomain (1984ms)
+		LoadAssemblies (1763ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (141ms)
-			TypeCache.Refresh (119ms)
-				TypeCache.ScanAssembly (105ms)
-			ScanForSourceGeneratedMonoScriptInfo (15ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (576ms)
+		AnalyzeDomain (366ms)
+			TypeCache.Refresh (310ms)
+				TypeCache.ScanAssembly (263ms)
+			ScanForSourceGeneratedMonoScriptInfo (46ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (1140ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (435ms)
+		SetupLoadedEditorAssemblies (878ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (20ms)
-			SetLoadedEditorAssemblies (5ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (61ms)
-			ProcessInitializeOnLoadAttributes (328ms)
-			ProcessInitializeOnLoadMethodAttributes (16ms)
-			AfterProcessingInitializeOnLoad (4ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (4ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 5.24 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4172 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 91 unused Assets / (2.4 MB). Loaded Objects now: 4627.
-Memory consumption went from 278.8 MB to 276.4 MB.
-Total: 3.042600 ms (FindLiveObjects: 0.225500 ms CreateObjectMapping: 0.105900 ms MarkObjects: 2.269200 ms  DeleteObjects: 0.441100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.373 seconds
-Refreshing native plugins compatible for Editor in 5.65 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Error saving file Library/StateCache/LayerSettings/9e/9ecc5c3c162a7aba29bafa64c8b94b7c.json. Error: System.IO.IOException: Sharing violation on path C:\Battle Realms\Library\StateCache\LayerSettings\9e\9ecc5c3c162a7aba29bafa64c8b94b7c.json
-  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <dc753a1061284f8e971ee88ee4826eee>:0 
-  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) [0x00000] in <dc753a1061284f8e971ee88ee4826eee>:0 
-  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions)
-  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize) [0x00055] in <dc753a1061284f8e971ee88ee4826eee>:0 
-  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding) [0x00000] in <dc753a1061284f8e971ee88ee4826eee>:0 
-  at (wrapper remoting-invoke-with-check) System.IO.StreamWriter..ctor(string,bool,System.Text.Encoding)
-  at System.IO.File.WriteAllText (System.String path, System.String contents, System.Text.Encoding encoding) [0x00034] in <dc753a1061284f8e971ee88ee4826eee>:0 
-  at UnityEditor.StateCache`1[T].SetState (UnityEngine.Hash128 key, T obj) [0x0004b] in <5d5ebefe97114215928ac1d9cd096522>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.StateCache`1<UnityEditor.Tools/LayerSettings>:SetState (UnityEngine.Hash128,UnityEditor.Tools/LayerSettings)
-UnityEditor.Tools:set_lockedLayers (int)
-UnityEditor.Tools:OnEnable ()
-UnityEngine.ScriptableObject:CreateInstance (System.Type)
-UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Tools> ()
-UnityEditor.Tools:get_get ()
-UnityEditor.Tools:get_visibleLayers ()
-UnityEditor.Animations.Rigging.BoneRendererUtils:.cctor () (at ./Library/PackageCache/com.unity.animation.rigging@1.2.1/Editor/Utils/BoneRendererUtils.cs:121)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-(Filename: ./Library/PackageCache/com.unity.animation.rigging@1.2.1/Editor/Utils/BoneRendererUtils.cs Line: 121)
-
-[MODES] ModeService[none].Initialize
-[MODES] ModeService[none].LoadModes
-[MODES] Loading mode Default (0) for mode-current-id-Battle Realms
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  0.755 seconds
-Domain Reload Profiling: 1126ms
-	BeginReloadAssembly (123ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (4ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (29ms)
-	RebuildCommonClasses (23ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (25ms)
-	LoadAllAssembliesAndSetupDomain (191ms)
-		LoadAssemblies (244ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (11ms)
-			TypeCache.Refresh (5ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (756ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (398ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (17ms)
-			SetLoadedEditorAssemblies (5ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (56ms)
-			ProcessInitializeOnLoadAttributes (299ms)
-			ProcessInitializeOnLoadMethodAttributes (16ms)
-			AfterProcessingInitializeOnLoad (5ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (8ms)
-Refreshing native plugins compatible for Editor in 5.53 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4050 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 63 unused Assets / (2.4 MB). Loaded Objects now: 4643.
-Memory consumption went from 251.5 MB to 249.1 MB.
-Total: 3.750600 ms (FindLiveObjects: 0.213700 ms CreateObjectMapping: 0.098000 ms MarkObjects: 2.885100 ms  DeleteObjects: 0.552400 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 411921.083256 seconds.
-  path: Assets/03.Prefabs/Monsters/Polyart_Golem.prefab
-  artifactKey: Guid(c6cfc32748fb5004aa11a1be074b5c58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/03.Prefabs/Monsters/Polyart_Golem.prefab using Guid(c6cfc32748fb5004aa11a1be074b5c58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64d5445923c6d1d6c381f3b8c2649795') in 0.216715 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 79
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.414 seconds
-Refreshing native plugins compatible for Editor in 5.81 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Error saving file Library/StateCache/LayerSettings/9e/9ecc5c3c162a7aba29bafa64c8b94b7c.json. Error: System.IO.IOException: Sharing violation on path C:\Battle Realms\Library\StateCache\LayerSettings\9e\9ecc5c3c162a7aba29bafa64c8b94b7c.json
-  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <dc753a1061284f8e971ee88ee4826eee>:0 
-  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) [0x00000] in <dc753a1061284f8e971ee88ee4826eee>:0 
-  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions)
-  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize) [0x00055] in <dc753a1061284f8e971ee88ee4826eee>:0 
-  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding) [0x00000] in <dc753a1061284f8e971ee88ee4826eee>:0 
-  at (wrapper remoting-invoke-with-check) System.IO.StreamWriter..ctor(string,bool,System.Text.Encoding)
-  at System.IO.File.WriteAllText (System.String path, System.String contents, System.Text.Encoding encoding) [0x00034] in <dc753a1061284f8e971ee88ee4826eee>:0 
-  at UnityEditor.StateCache`1[T].SetState (UnityEngine.Hash128 key, T obj) [0x0004b] in <5d5ebefe97114215928ac1d9cd096522>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.StateCache`1<UnityEditor.Tools/LayerSettings>:SetState (UnityEngine.Hash128,UnityEditor.Tools/LayerSettings)
-UnityEditor.Tools:set_lockedLayers (int)
-UnityEditor.Tools:OnEnable ()
-UnityEngine.ScriptableObject:CreateInstance (System.Type)
-UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Tools> ()
-UnityEditor.Tools:get_get ()
-UnityEditor.Tools:get_visibleLayers ()
-UnityEditor.Animations.Rigging.BoneRendererUtils:.cctor () (at ./Library/PackageCache/com.unity.animation.rigging@1.2.1/Editor/Utils/BoneRendererUtils.cs:121)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-(Filename: ./Library/PackageCache/com.unity.animation.rigging@1.2.1/Editor/Utils/BoneRendererUtils.cs Line: 121)
-
-[MODES] ModeService[none].Initialize
-[MODES] ModeService[none].LoadModes
-[MODES] Loading mode Default (0) for mode-current-id-Battle Realms
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  0.773 seconds
-Domain Reload Profiling: 1184ms
-	BeginReloadAssembly (138ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (3ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (33ms)
-	RebuildCommonClasses (23ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (30ms)
-	LoadAllAssembliesAndSetupDomain (209ms)
-		LoadAssemblies (265ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (21ms)
-			TypeCache.Refresh (10ms)
-				TypeCache.ScanAssembly (1ms)
-			ScanForSourceGeneratedMonoScriptInfo (6ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (773ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (381ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (18ms)
+			InitializePlatformSupportModulesInManaged (70ms)
 			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (56ms)
-			ProcessInitializeOnLoadAttributes (286ms)
-			ProcessInitializeOnLoadMethodAttributes (14ms)
-			AfterProcessingInitializeOnLoad (4ms)
+			BeforeProcessingInitializeOnLoad (122ms)
+			ProcessInitializeOnLoadAttributes (538ms)
+			ProcessInitializeOnLoadMethodAttributes (138ms)
+			AfterProcessingInitializeOnLoad (7ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (7ms)
-Refreshing native plugins compatible for Editor in 4.46 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (6ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 20.43 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4049 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 63 unused Assets / (2.4 MB). Loaded Objects now: 4667.
-Memory consumption went from 255.0 MB to 252.6 MB.
-Total: 2.808800 ms (FindLiveObjects: 0.210500 ms CreateObjectMapping: 0.097400 ms MarkObjects: 2.078700 ms  DeleteObjects: 0.421500 ms)
+Unloading 5138 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 125 unused Assets / (2.2 MB). Loaded Objects now: 5552.
+Memory consumption went from 226.2 MB to 224.0 MB.
+Total: 10.683500 ms (FindLiveObjects: 0.501200 ms CreateObjectMapping: 0.244400 ms MarkObjects: 8.997900 ms  DeleteObjects: 0.938500 ms)
 
-Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/IFileSystem.cs: 5fefd90ace605d3a12fb6defe81adfa3 -> d0a5668d9c43d0a16eec8fa2a37aa20c
+  custom:scripting/monoscript/fileName/DiagnosticsPayload.cs: 1ebb9cbc2393fe85aea7fcb0b196e8e6 -> 
+  custom:scripting/monoscript/fileName/IService.cs: 5fabf780daab20a9390ab06949ad1fcd -> afa2330a6d32be2e7a659227e3bf813e
+  custom:scripting/monoscript/fileName/DependencyTreeExceptions.cs: 703e54875cebbe0106d397e9c41c33c2 -> 8d717c8797566529cf594f9aab3c0409
+  custom:scripting/monoscript/fileName/IDiagnosticsComponentProvider.cs: c2c1b00d976ea01840564b70055ef03f -> dbeac349f8c5591a0ab13c5e6354061e
+  custom:scripting/monoscript/fileName/Factories.Gen.cs: cb78b730715b4315da7b72a5c022dfb1 -> c9550e2a227c017a16a3e473be870754
+  custom:scripting/monoscript/fileName/CoreRegistration.cs: e9bb16ba028f86a8c50f3fecff52d4e4 -> afa90de4a402b0848ad8b60755b1ca20
+  custom:scripting/monoscript/fileName/CloudProjectId.cs: 11f501d9f8ef63000e21d85f0da89d2c -> 79896f5d7f4686775371eee2c8881849
+  custom:scripting/monoscript/fileName/IServiceRegistry.cs: 3a08929f5ab981e32b6103fd5f31f766 -> 27b0be3a7d5fbabc2f8cff0f28316b4a
+  custom:scripting/monoscript/fileName/SerializableProjectConfiguration.cs: f0642416ae727f829c2994ab80f01707 -> 8d2aa3b56842beb1ee3e05f5a4e2f3c4
+  custom:scripting/monoscript/fileName/IVivox.cs: df4c57e053a40e6e36d9415c266625c2 -> 6d92ea4b822d1fa7e4b8787c59760673
+  custom:scripting/monoscript/fileName/UnityCreateAddressRequest.cs: 8ab40201400f538e739f4cc328a2d4ab -> 231eb736f0a651a8ee21e6aa579173ae
+  custom:scripting/monoscript/fileName/UnityListOrganizationFavoriteProjects200Response.cs: ec6bbcbd6b5d62d0ab4c3f66a1f6bc6c -> 2acfbc626d621e368ef9190462157b7a
+  custom:scripting/monoscript/fileName/IServiceComponent.cs: a9ffd0d371363bcf79560643f42999aa -> 56d2b4986149318278267c2a2e499b7e
+  custom:scripting/monoscript/fileName/IPlayerId.cs: bd6232717324a68ba49410cd55e0afcd -> 8ec284f91dceb8f1818908be17c609b0
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/CommonErrorCodes.cs: 1c1f95527d2d911971c7000c11e70c3e -> 75f302fd69f29841b35f2306c97082ed
+  custom:scripting/monoscript/fileName/IChannelTokenProvider.cs: 42930866c5653cb3e9d1a1907e7e62a9 -> d41d74d962184eab5928b0b3bdda1ee9
+  custom:scripting/monoscript/fileName/EditorGameServiceRegistry.cs: 22eaae3488d79b0fbac7aaa55fd81fa6 -> 0265fd85a62bd33c32f256257ebc576f
+  custom:scripting/monoscript/fileName/ProgressBar.Gen.cs: ba7284d39ff6dba50d911776ee5e5752 -> 09dcf9975c3de3bc94763c35db49d364
+  custom:scripting/monoscript/fileName/EngineStateHelper.cs: 120c8423a2a5352dca87bc5a7eed94c2 -> ebfe492ca39645883d66825c2e77f1d0
+  custom:scripting/monoscript/fileName/EnvironmentProvider.cs: 0300690d40acbb34f2cfa1c15b138c5d -> e6441984086d3ec4f02dd82b6dec6df1
+  custom:scripting/monoscript/fileName/PackageInitializationInfo.cs: c5b2a4a0ed539da5068961ec19bf7689 -> 82c881c6d5f9d1b5f2eba332919bcd1c
+  custom:scripting/monoscript/fileName/DisabledDiagnostics.cs: d4085aa8948d835e81e4cb82a811367e -> dca147f0ee6a8cbd3c40d0fb15b26062
+  custom:scripting/monoscript/fileName/LockedServiceRegistry.cs: 92b64f573ee53607479c4a68ae087475 -> ea77a1a45ffb4a9bcd250cb8233d16f9
+  custom:scripting/monoscript/fileName/ResponseHandler.cs: 03f08ca06d2185cfb0251530a1e5213d -> d3309722a6b35e47fbfcd01d3512a138
+  custom:scripting/monoscript/fileName/JsonHelper.cs: 0e43a3acbd1f58c696f94896e84fcbf9 -> 0b5759f67f92e2eb09febb2082aca955
+  custom:scripting/monoscript/fileName/MetricsFactory.cs: 651b294a0311fd0f68e2d73fd0be080a -> ff8596a1ccea2041a0c0cfe2841c8f74
+  custom:scripting/monoscript/fileName/EnvironmentsClient.cs: 4cd9098bb143039c435e4cca76050cd3 -> 9c80a43488077f46562fa053df484911
+  custom:scripting/monoscript/fileName/ExternalUserIdProperty.cs: deda2135b40fe80ec4bd4deebaebfc53 -> e9524414c13dc2d0db279d48f3b164ab
+  custom:scripting/monoscript/fileName/ReadOnlyObservableCollection.Gen.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/DisabledMetrics.cs: 20a0b0abaab41a70137ffd912c6d6a2e -> bbb9bc05cfe10f1818b0676306a0b1b1
+  custom:scripting/monoscript/fileName/CoreLogger.cs: 2bd5f9b22db6e6555b65fed9b130d9cb -> 1639b74467b5a585128e7c7cefe73635
+  custom:scripting/monoscript/fileName/Environments.cs: c4c1a9b124bfcc10a0a14389800f583f -> 8b1687fd15649a52827b18b8b452a28f
+  custom:scripting/monoscript/fileName/CacheExtensions.cs: f511fe0b9e1f588fd9d29383042c655c -> 
+  custom:scripting/monoscript/fileName/DisabledMetricsFactory.cs: ffdd304c316c45f6210eb9e57ffe54a6 -> 358d9e7c090aa1eaa30e6a5f02610459
+  custom:scripting/monoscript/fileName/UnityAnalyticsIdentifier.cs: 5d3d39efb5d5120cde9679cb7195f152 -> 40be8e11923159cf7c61c72c1a1b26dd
+  custom:scripting/monoscript/fileName/SettingsCommonHeaderUiHelper.cs: 2b819e84e3d5fec872b7d4f2f81022ca -> 394582b395d6aebbb1e6e49abf6a1645
+  custom:scripting/monoscript/fileName/IEditorAnalyticsEventRegistrant.cs: ceb6e0968361d734990e7d7a294acda7 -> c4a0f7089b5b21ceafb7834c915d762f
+  custom:scripting/monoscript/fileName/AsyncOperationBase.cs: 57a32d93693f8f934c0432c080e7a107 -> adfca800027e0922d59797ee493a2672
+  custom:scripting/monoscript/fileName/IJsonSerializer.cs: 188ea5364733193ac17c7a20237f8755 -> 952e0b7cbb25051b8e0e85eda2a653c8
+  custom:scripting/monoscript/fileName/HttpClientResponse.cs: a39340401b2f67acae4f72a39b1abd48 -> 9313baa475ddca44cec07c4995e4adab
+  custom:scripting/monoscript/fileName/XmlLinkedEvent.cs: 859b063da0ac784bb623be31ce0a9c70 -> efe4e7e159b94963c650fb293df0f9ff
+  custom:scripting/monoscript/fileName/UnityUserOrganizationsV1OrganizationsInner.cs: aa97406f4cd05b9a874ac70fe27a21f5 -> 440e6e939c241944b318429e561d5df2
+  custom:scripting/monoscript/fileName/PathUtils.Gen.cs: 7b457d51374430b8395b6dba7ad8b5f1 -> 5ddc0068a1cf521fafc42781cf03a3a9
+  custom:scripting/monoscript/fileName/IEditorGameServiceRegistry.cs: 228a4b2f93d5dc11398b79537aa9d452 -> 4894c70fd515017ae46efb4f44f8b3e2
+  custom:scripting/monoscript/fileName/AsyncOpRetry.cs: 588e9e07540c0e71f306dbacc35f8550 -> 7d4b426ab21943de744ee7f413070273
+  custom:scripting/monoscript/fileName/RequestFailedException.cs: c4624902728c50c74d12241ff34d00ce -> a9eaec06c59248353e0ced5cdc95723f
+  custom:scripting/monoscript/fileName/IUserRoleRequest.cs: 7afbd434b479316c894355a5c51554e1 -> ccc5b229323b6e9c080254df6d4b51cb
+  custom:scripting/monoscript/fileName/DependencyTreeExtensions.cs: f5657b38cd139e893a6ff87ee3d903d9 -> 63e3c71f0d430a351e6159f69f0a0682
+  custom:scripting/monoscript/fileName/XmlLinkedModelsExtensions.cs: 6c9e60707f35f99940fe1f05a0718770 -> 9e8a2b9216079ba87ebfd084960b4ac0
+  custom:scripting/monoscript/fileName/UnityThreadUtils.cs: 9583c6b5ddb377505b39bfe4a8ad68a0 -> 6f10d79f183f36877232e308ffa4d195
+  custom:scripting/monoscript/fileName/Notifications.Gen.cs: 442a465aa8cc9ddcf751f41c74e81b46 -> 0b77852ac67d3ab84f489a2ddbdf8168
+  custom:scripting/monoscript/fileName/EditorGameServiceRemoteConfiguration.cs: a53f96815da50de15010b1c479bc70cf -> 0cdf409b5aa8d4c25876d72b5c6a3b60
+  custom:scripting/monoscript/fileName/UnityUploadIconV1201Response.cs: 158e57fd699787e902f7f50a06b05b61 -> a7cab146027c2f1549f57a603ca22560
+  custom:scripting/monoscript/fileName/EnvironmentsApi.cs: d1acb86281c172453b52276b53ac5f34 -> d5d1f45bf03abd7dd2f469acfd3b5bcb
+  custom:scripting/monoscript/fileName/EnvironmentsOptionsExtensions.cs: 16627d73b546f0be6f706f8df55576a4 -> 1e2776231b4e06a0e9b293a3623d643e
+  custom:scripting/monoscript/fileName/DisabledDiagnosticsFactory.cs: 54002b5d589772b5b5094c7d81ace522 -> 92ef54fd2e9d3765db37c6ce29121dc7
+  custom:scripting/monoscript/fileName/IServerEnvironmentId.cs: bd8c88b33ec1ee3be3f25017f4e0b53d -> fff64b157cd649d3d948016718fba14e
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/EnvironmentSaveSystem.cs: c43c37b5596705dd2ee0866a27f041b1 -> 931610e413c03621f898c65e36f44fc6
+  custom:scripting/monoscript/fileName/ComponentRegistry.cs: 84423c75566112c54298c9d4b363bdab -> 2fefa8b1f349de188d35295b3042e694
+  custom:scripting/monoscript/fileName/ProjectStateRequest.cs: 5177a66d4272f64b5915104beb36d4d1 -> 6ba5b48af1466d2a4dbb6e908352d7c6
+  custom:scripting/monoscript/fileName/ProjectBindRedirectPopupWindow.cs: 3e357d68fbc2bd99c103a3021b8623b4 -> 03988f1b5263bdfb55c00f001c224465
+  custom:scripting/monoscript/fileName/IEnvironmentSaveSystem.cs: d3f06efd38804499a19ddf9b41ca77d9 -> 8319bf770542e6764e5512ea06d2b015
+  custom:scripting/monoscript/fileName/OrganizationProvider.cs: 61380cf18249cb2df96bfab753eec778 -> f2089b4351294d4815b134a51aba3d17
+  custom:scripting/monoscript/fileName/EnvironmentsClientFactory.cs: 7dce2ad008c0898f2d29e40907c51ece -> 325dec75592389c16ac743f438f24960
+  custom:scripting/monoscript/fileName/ConfigurationCollectionHelper.cs: 226b0e8a5122d76388fe717b88cca138 -> cb4dac2b34c76624ca64d0ad91214a93
+  custom:scripting/monoscript/fileName/DictionaryExtensions.cs: 2c963e939bb369cfedad2fba82c1b9e1 -> d37b3043b5339f13af7295850374111a
+  custom:scripting/monoscript/fileName/AsyncOperationExtensions.cs: 88135a0e5e924200b5061b4f8adac0c1 -> 1fabcad386c6a3966bbd7925c1ec32e2
+  custom:scripting/monoscript/fileName/BaseApiClient.cs: c998ecc09d0d4ed06bdce591e6e0696c -> 8db05afd887e7e24cdb4782d155e924b
+  custom:scripting/monoscript/fileName/ProjectUnlinkBuildWarning.cs: 03cbe9e96d855c281b3f632fa2e19a5b -> c52465de41a758f7a3babb293254b52b
+  custom:scripting/monoscript/fileName/IProjectStateHelper.cs: ed3dd0047a2a1d75cbcdc4603dc4e43f -> 3adea7eb7ff850864d22d07f530e0111
+  custom:scripting/monoscript/fileName/ICloudProjectId.cs: 16649180d370f6bf6f994f6c16948b20 -> 60ddc28b5a3880441601b503b311a533
+  custom:scripting/monoscript/fileName/TypeAlreadyRegisteredException.Gen.cs: fd9f2c6221864f5872e2d3472156b0ce -> f78f490406edcce398401642789c4f0d
+  custom:scripting/monoscript/fileName/IAsyncOperationAwaiter.cs: 8c8085c3be3f16e67f288066c78e5321 -> 4e390262389eabe5476a62852a905252
+  custom:scripting/monoscript/fileName/ProjectStateHelper.cs: 196a940ce59c70a5f2733978a6ece604 -> a377430869822a008fcaab13302eb7b2
+  custom:scripting/monoscript/fileName/UnityGetUserGuestProjects200Response.cs: 769d839d269c46236728c0d8f923f774 -> 101aa8e271472b02f3ae37c6ca9da3cb
+  custom:scripting/monoscript/fileName/IHttpClient.cs: 92f29a0eb8e31b2c4b7dfc1fdac89ddf -> 88481d25a1f892f1dc32d0efcddba205
+  custom:scripting/monoscript/fileName/ICopyable.Gen.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/UnityWebRequestClient.cs: be666a0ebb1612834cd73e5144ea017a -> 171ccf79c76240837e46a8b79f973b6e
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/AbstractRuntimeServices.Gen.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/IMetrics.cs: 71a07f4f7b604bb3d2d6819663df7fa0 -> cc4d6b26e54335130aeffb94ca489467
+  custom:scripting/monoscript/fileName/EnvironmentInfo.cs: e0d50254e6ed2c87cc01633a03c83371 -> 78a754ae7b45de5c0f5a2d3aef9c92f6
+  custom:scripting/monoscript/fileName/IEnvironmentService.cs: c3d78798e0dca6804969f6e90d2ee75b -> d28a6fb640eb356196b9c1017c7a0d37
+  custom:scripting/monoscript/fileName/MemoryConfigurationLoader.cs: 47c2417d5575961983b95dd0000fe8e6 -> e1621a8e05504bfbe89a438b0282bf97
+  custom:scripting/monoscript/fileName/StreamingAssetsConfigurationLoader.cs: 7276e3da7c6857f3bef3b581febed7ac -> 2f115cec9bfe6872856ee4ad61eb2c3f
+  custom:scripting/monoscript/fileName/EnvironmentChangedParameters.cs: e16920070957f3b82320950b1770f0d5 -> 0ad6f60cc0b0e0ea02aed10221f7c8a8
+  custom:scripting/monoscript/fileName/StagingTokenExchangeUrls.cs: 7e9b79077d96a08b3944ae8734bc1a46 -> 7ddebca8557e1d6e23849e5e07df2296
+  custom:scripting/monoscript/fileName/CoreDiagnostics.cs: cfdf373dd970b879f7026ffe45b0b6cb -> 041dd565425b56b2b823902ba53cfe54
+  custom:scripting/monoscript/fileName/DeserializationSettings.cs: 83e3c462ed8c9fceead6291127d06c0d -> 1061b12039666d7d981cfe68ebb1982d
+  custom:scripting/monoscript/fileName/IProjectConfiguration.cs: d4c5b6b22b2986bfea097861332bda9c -> 9794b060b4360e9cc39456a13bf716cc
+  custom:scripting/monoscript/fileName/ProjectBindRedirectContentUI.cs: 88348fb6c0d5c2bacdaf03c552b13923 -> ea393b5b63051e326686665efb7ed1d2
+  custom:scripting/monoscript/fileName/IDiagnosticsFactory.cs: c19f346158a1f8127dce3788b57b0489 -> 8a3a37fd862b7581b4621716ed14b18e
+  custom:scripting/monoscript/fileName/HashExceptions.cs: ff9d225c99e3cd4adc1cbb58fcf85c4a -> 0c04f84e29310842caf31699037c2a6f
+  custom:scripting/monoscript/fileName/IServiceFlagRequest.cs: 1c304a9d8950f5b0a9ef93895247570f -> b3a0a6e65e5600f2006d43595e9e07b1
+  custom:scripting/monoscript/fileName/IActionScheduler.cs: ea4c9b9c48ea6f95190537df6f685f44 -> e5388884c9a263c0b7f149f53626af31
+  custom:scripting/monoscript/fileName/DiagnosticsFactory.cs: ad462096b57b52789895c37344fb71bc -> 3828493052568497f2ccdc68dea8b14c
+  custom:scripting/monoscript/fileName/ConfigurationEntry.cs: eea9e2522df385624ef8c262e8cdcd34 -> c1ed8586c7c9df05d945744b24303784
+  custom:scripting/monoscript/fileName/UnityUserOrganizationsV1.cs: 63da7817ba5fe797ee19fbaa29d039df -> 73dafadd41de13ace6058db610522dcd
+  custom:scripting/monoscript/fileName/XmlLinkedProperty.cs: 3e04110a46786ddba7df33f283a24002 -> 29784440eed3b7889f0bfe76633cc000
+  custom:scripting/monoscript/fileName/TaskAsyncOperation.cs: c92a0e1ce0b570c002c965eb6bec9992 -> deaa3dfd455420a1f0dece4fa000e9b1
+  custom:scripting/monoscript/fileName/Singleton.Gen.cs: 5080c923aa452ca3e217522074727bda -> 66c389d1e92bc70efd18b5d3b46f6bca
+  custom:scripting/monoscript/fileName/FileSystem.cs: 59f511c5c3f22b2e90cfafa4883f133b -> ab92d4d8629b2af54c3a35102bd12cc4
+  custom:scripting/monoscript/fileName/XmlLinkedMember.cs: 5d8c659c9984c5e6d4d554851b665bda -> 83ebbc44b07d4de0b62121c7811a18b1
+  custom:scripting/monoscript/fileName/OrganizationHandler.cs: 897254f11869bb617f6acb244437921d -> 8e4686813d139f7c9962131a6d917980
+  custom:scripting/monoscript/fileName/JsonWebToken.cs: 318c974552f7f28515f4321e56a3c55a -> 576840f242d675d41e4a3e0094ff62a5
+  custom:scripting/monoscript/fileName/UnityTransferProjectRequest.cs: c348280a464f669b79011f84f68957cc -> 160aa9e78d67107dbad79b2602ea5baf
+  custom:scripting/monoscript/fileName/IEditorGameServiceIdentifier.cs: 2f5dc475e7ac85b376ed01b4abd44ed9 -> a0ceaf826ce6fd5a1bb279e1579a965f
+  custom:scripting/monoscript/fileName/ConfigurationBuilder.cs: c8d7566522dda49742b6838f2e53f003 -> 66d199ae60d28cb6554d3c4ee75fd74b
+  custom:scripting/monoscript/fileName/OfflineUiHelper.cs: eb85065b6cfc59ce26f6c0d0d81f5b55 -> 74f5179e6468b11d72cd60998e0c725b
+  custom:scripting/monoscript/fileName/EnvironmentView.cs: 4be52c73712465e567b964ab1e1396bf -> eacb7d766ee45d9a07ea107dc0c80ac6
+  custom:scripting/monoscript/fileName/AccessTokens.cs: a132fa0a712618560c20432fe0f5e37d -> 7f3bd47a4ee3b608248d36969879b607
+  custom:scripting/precompiled-assembly-types:Newtonsoft.Json: a784019f7e79cf0f65e748d41d4ceb44 -> c8c8ff43efb3d1e41e3b7590aaa5d72f
+  custom:scripting/monoscript/fileName/AsyncOperationAwaiter.cs: 8aeafbe036fa9ae3a349b3aa04655202 -> ddd9d932eca2ff6dc550c174a68fdc5b
+  custom:scripting/monoscript/fileName/HttpOptions.cs: 5390c77d902f1595bac46aae0c852715 -> 99f08410c8743651b2a8fdf6d32f10c4
+  custom:scripting/monoscript/fileName/UnityServicesInitializer.cs: f5b0ef33a9bfe03f8a55ce817615e6d0 -> fa9a608355e48120534d684af5f04612
+  custom:scripting/monoscript/fileName/UnityWebRequestSender.cs: efa7f9e2c98b7025231b997019c6e6cb -> 
+  custom:scripting/monoscript/fileName/UnityOrganizationWithAddressV1.cs: a4de64ef515d6a6028d1bee36389e734 -> 0255bc6178742cff2a423de9eb51e6a2
   custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:scripting/monoscript/fileName/ActionSchedulerCleaner.cs: 0ee59871b1807d9330ff37e70375986e -> 1750f9737ba65c8b5f441e824f90784f
+  custom:scripting/monoscript/fileName/ProjectConfiguration.cs: 59edc508e779aa5eb218c6324d3778bd -> b6a00bb7bd3df2a451321f73e7cb7141
+  custom:scripting/monoscript/fileName/ThreadHelper.cs: 7a319862a9430bf7c15168a1eccce12d -> 1d011737e8133fca1a700a78b9269e43
+  custom:scripting/monoscript/fileName/MetricsPayload.cs: 7c52008966f8257f75f11aab3a038abe -> 
+  custom:scripting/monoscript/fileName/Sync.Gen.cs: 75874dfc9b8c626e676fc18f184b597a -> ac834b133bcd24c6292144f8ec2fc479
+  custom:scripting/monoscript/fileName/UnityCreateOrganizationRequest.cs: 1bb007b2b324d5784f1067808be28f2a -> 4cf5c8730ffaa3c5888d236ebc6475fc
+  custom:scripting/monoscript/fileName/EnvironmentConfigProvider.cs: 2d4b55eda833ebb45ea3873117fa69cb -> cadac2235852654a9596b0eac1628eac
+  custom:scripting/monoscript/fileName/EditorGameServiceSettingsProvider.cs: 8d358455b88cebce412c7bbdf8b21967 -> 2cb6ae4d961883e67f3e282b18d40d94
+  custom:scripting/monoscript/fileName/DisabledCachePersister.cs: 90647cc400823b41df847a6cbfc29026 -> 
+  custom:scripting/monoscript/fileName/NewtonsoftSerializer.cs: eb98fff8a01dd808d7fb129f6721ecf7 -> 455e87e74f7c4ce7bdb201550b0ccccf
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/CoreRegistryInitializer.cs: 6d8c17782dee86a08edb034ec943ead3 -> e34ea8cde280e241aa2682bcb33aae4f
+  custom:scripting/monoscript/fileName/IEnvironmentProvider.cs: 7795ead2595c35fc4f5dbd453a18ca20 -> 3109b26c8523241ba567e094603484cc
+  custom:scripting/monoscript/fileName/IdentityIOneOf.cs: a5ecc6cf3b9011431eb6677ea921ebc7 -> 29de1876e6381d1376e3875f63eb04e7
+  custom:scripting/monoscript/fileName/AccessTokenErrorUiHelper.cs: 2cf6f5c36ac07815c14128188ff975a6 -> 398831acfad9119e6105671c7f2d98b3
+  custom:scripting/monoscript/fileName/LockedPackageRegistry.cs: ca78680e041b01d55a6feaf7b6fe1f57 -> 99e3472ea654b46f01a9dea3a90719dd
+  custom:scripting/monoscript/fileName/HttpResponse.cs: 663e69655a695108b0ebcfb0f88457c2 -> fe56c84be580f48ba5f6047136e2cf67
+  custom:scripting/monoscript/fileName/JsonObjectConverter.cs: d768840709579e669c62e7e0cd814107 -> 38bbb4aa4e7eb125ad2bec69e448a02f
+  custom:scripting/monoscript/fileName/ProjectConfigurationBuildInjectorWithPlayerProcessor.cs: 83c4583ee630bdfc10ab82c412ee8574 -> bfe4c2bc0cd0ee036e60e1bfa30dda8a
+  custom:scripting/monoscript/fileName/UnityWebRequestHelpers.cs: 297dcb22ef414d6646c1ab2e41f9a211 -> 0394add6a9f301a01222078b29ac0b18
+  custom:scripting/monoscript/fileName/LockedComponentRegistry.cs: 99d90601a89ffb6c4529eb7493ce77a6 -> ff7d4cf11049af0d186f2bffab21c5d3
+  custom:scripting/monoscript/fileName/IServiceFactory.Gen.cs: 810cca57e9a45f1eb1057e252b18f63e -> 5696ff4e8140aef57b36c4052f3bfc23
+  custom:scripting/monoscript/fileName/IUserRoleHandler.cs: 69ea627636ad3c7f1513a578f9bf9082 -> 33c258d1966d18e84a25c5d4701ea0a4
+  custom:scripting/monoscript/fileName/IEnvironmentAnalytics.cs: ac9a2f4597973d810f1d5c2f11f640b8 -> c2ab3518cf2897a2ac4cf87258f13731
+  custom:scripting/monoscript/fileName/LoggedOutUiHelper.cs: d38d4e7dac850d1a93a3975f1b010704 -> ded703f4d077a86b901d24f648f694ca
+  custom:scripting/monoscript/fileName/IDeserializable.cs: 43bc71f18366fcd7d3635f775b50e98e -> 16d3138d206e866a34233b134f1222b0
+  custom:scripting/monoscript/fileName/CollectionBinding.Gen.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/MinimumBinaryHeap.cs: 59163208d005150f647fbb3a4f52d312 -> 58e2f67451a6dd12649c5819616167df
+  custom:scripting/monoscript/fileName/Diagnostics.cs: fbd463be77e55b0f50101f952bbc8fce -> 310215ddbef3d1759d3801a8f9ab01fa
+  custom:scripting/monoscript/fileName/ModelBinding.Gen.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/ExceptionHelper.cs: 3a3ce6ca02905f0ae3eb4364e224ff83 -> 074ec3a4464566a6e9a1f4db3dfb905f
+  custom:scripting/monoscript/fileName/DependencyNotFoundException.Gen.cs: 19b0af50881b93a6d6687e8e454020d7 -> b85b8fa51199029c7dffa67f92fbcb8c
+  custom:scripting/monoscript/fileName/MergedObservableCollection.Gen.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/IInitializablePackageV2.cs: e276cee0874655c22352970ce517051e -> aa06fccc5712784ca17e5e7b41810911
+  custom:scripting/monoscript/fileName/StatusCodePolicyConfig.cs: 6e8ca9640991c209d3c23039ce69b8a9 -> a90864f22acd00607534d01b8dae197f
+  custom:scripting/monoscript/fileName/ProjectBindRedirectProjectSettingsUi.cs: 2ae4dd2dfa39c9c9b76ee2a05340bb87 -> 07a51e74c57a4053931e01d14a91288e
+  custom:scripting/monoscript/fileName/IProjectInfo.cs: 52dd8e6e8c6b3ddd487acff55d26249e -> 2c81b6190195adf1450efd9b8f54de95
+  custom:scripting/monoscript/fileName/StreamingAssetsUtils.cs: 234537d5614fb5bb16672b45b1d6635f -> 4a501e19e96ab989552681f7cfe95d3b
+  custom:scripting/monoscript/fileName/AdminApiHeaders.Gen.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/PackageInfoNameComparer.cs: 3a0c6b441641b31fda537ae16618c649 -> ea0f38f3a3ddb0faa351ccba3098624f
+  custom:scripting/monoscript/fileName/UnityThreadUtilsInternal.cs: 473cd50ab0989ef787c0f2861fa498bc -> db907031b91c05c00109dd0308888529
+  custom:scripting/monoscript/fileName/HttpClient.cs: 25d191d443d6908b8667cdee819f35a0 -> 6f589aa53e23fc30613c9de6ca38fe21
+  custom:scripting/monoscript/fileName/UnityWebRequestHelper.cs: ffb2ec873d29eabdbfb583410e2de5b3 -> 2e5cbc5c38937ccdc5de3700aaa6f529
+  custom:scripting/monoscript/fileName/RetryPolicy.cs: a7b385c65aafe716e9e76dd2b50a78d0 -> e04bb42ac963f6250bc780a051aeca72
+  custom:scripting/monoscript/fileName/UnityPatchProjectV1Request.cs: 32577f6603b726ea9fb16c3fb67febb3 -> c6a39576d362d5719b8c0057b54f465b
+  custom:scripting/monoscript/fileName/IAnalyticsSender.cs: c17ed2c24a9361674fb480260c1a8a59 -> 27ac0f3c61390701fdd3b82b17bedf22
+  custom:scripting/monoscript/fileName/ServicesCreationException.cs: 304043f2854bcbbf07feb219fd33eaf4 -> 40142800771fcc1f5855193d741c129e
+  custom:scripting/monoscript/fileName/UserRoleHandler.cs: e43d8e1d8809af34c7f9d49aa3bf55e0 -> a42f5e4f9979e28831240d76ea709864
+  custom:scripting/monoscript/fileName/IEnvironmentFetcher.cs: f55f3afd86a00dd58c11c0be2035c0ac -> 4324c744baa655843f8a2db18e322b79
+  custom:scripting/monoscript/fileName/ITokenExchangeUrls.cs: 83d81bf7438ba29857424957bf473096 -> f529e59149e9ccc31fc5b827b34c33db
+  custom:scripting/monoscript/fileName/IEnvironmentValidator.cs: f36c89a0e941e84dd0b463e92cdbda91 -> bdc1089a446560e3518f7ac97786d874
+  custom:scripting/monoscript/fileName/UnityUserGuestProjectV1.cs: a81ed4529ea9753535a31c7874696866 -> 58ac7a8966d050da82ebd9946d7ad9a7
+  custom:scripting/monoscript/fileName/ITelemetryPayload.cs: 5c76f6f6a7e7464e6b1a068207b03ef0 -> 
+  custom:scripting/monoscript/fileName/ReadOnlyHttpRequest.cs: 4272f9a28400dab18109e1dfa97826f4 -> 8ed1e96527aeaf3049f26baaeff0902d
+  custom:scripting/monoscript/fileName/IsolatedJsonConvert.cs: 31558e04e76f8b33b0321744b7c06fc8 -> d399be4ef15efaacaf7758f4b29d410e
+  custom:scripting/monoscript/fileName/MappedObservableCollection.Gen.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/IUserIdentifierProvider.cs: a36716f3a9cbbce49c49213be951df2e -> dc5eeac839d4cf332ea648a7fdcd39d6
+  custom:scripting/monoscript/fileName/UnityGetOrganizationMembers200Response.cs: c09090a89207b33bf2fe0846e62df113 -> 2a3745ba3cf60a91cc07f675b5cfe7f0
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/CloudEnvironmentConfigProvider.cs: 432274cebf291679e452896d77059719 -> 0d9357504beb82cf1f27ae6c7b6ddec2
+  custom:scripting/monoscript/fileName/IServerAccessToken.cs: 63eaceb53aed15c0e27cec51e0b38f82 -> 5dfd5eddfcd0cafe1db05f4c334820f7
+  custom:scripting/monoscript/fileName/ActionScheduler.cs: 853c46b83b4240c75f28ea878d4c1d85 -> 4b3a1bee28d6ab276113779464cd5e1f
+  custom:scripting/monoscript/fileName/ProjectInfo.cs: 938fbee3cd8f1b1018d11aeea40541e2 -> d289d5cd3d7bbcf9a82d73b4aa756d36
+  custom:scripting/monoscript/fileName/UnityCreateProjectRequest.cs: 251bbd5cb3bf8e513007d267d7cd075e -> 553b660d315929e3419e6a209f9bb6ab
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/EnvironmentSettingsProvider.cs: 357b4c9513e8f5f5d1d126bb84626974 -> 237263cbc2f115c0b90b2c3fc83a1110
+  custom:scripting/monoscript/fileName/UnityUpdateOrganizationRequest.cs: b47eb1657ec3997d204398d1db37f29c -> c81a99780bba7daac8cc2c5dac469fe1
+  custom:scripting/monoscript/fileName/Metric.cs: 38b96fe3c7f9144ab95fdd6dcd3d8cbf -> 
+  custom:scripting/monoscript/fileName/UnityAdsIdentifier.cs: ee06a31a5ddf916127a7bdb15024a6b3 -> 6666e4d931c1a681dcee861ce8dc56a2
+  custom:scripting/monoscript/fileName/RetryPolicyConfig.cs: 1baa476db604e513cce8f1a079a8f840 -> 533d36c1df5475ce177f07fcbfd5c545
+  custom:scripting/monoscript/fileName/EnvironmentValidator.cs: c8389619426b202bfa1d6656064379da -> 08b5a9dc48dd22c719e1975ef1db1683
+  custom:scripting/monoscript/fileName/ProjectConfigurationBuilder.cs: 832d847b6a0e9ac8ec834e82bb68a1d3 -> 3a77bc00f860533701242ca98886ca86
+  custom:scripting/monoscript/fileName/IAccessTokens.cs: f64c066076f4834ace56ab1262bb92ab -> 3e3094814f4dba04dfbc3053655e6598
+  custom:scripting/monoscript/fileName/UnityEnvironmentV1.cs: 7029cb9a776f984756d2d7b572379eca -> 1eea8ffdfb5010d89d3ba557b2d50eab
+  custom:scripting/monoscript/fileName/UserRoleRequestUiHelper.cs: 08d8297b30d69928bb4c03d9518fd9ec -> a99a899edbebc06ce30ec51f79ff566a
+  custom:scripting/monoscript/fileName/UtcTimeProvider.cs: 26e6e57a050b0cf48e3ecc8d5d143ab8 -> 34e00235b689057dfe7c5f53347158ea
+  custom:scripting/monoscript/fileName/ServiceCollection.Gen.cs: f15bba03101f901294dc3114a419b714 -> ee70a277f1bc1e6641d018ca44380804
   custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/SystemEnvironmentPathUtils.Gen.cs: 0b67b87725e50f4d2fce2472a64797fb -> 9f60a7d4b8edfd5e67c66c89eee984df
+  custom:scripting/monoscript/fileName/GatewayTokens.cs: 1e024b175666e3a7c1b8b40cec4a862d -> 53270745929a7034c3268a07c13af48c
   custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/EnvironmentsApiInternal.cs: 8883f9e38de47ab152c76c8b87b007ab -> ddda38a23193b92419a4176f3ffd04a7
+  custom:scripting/monoscript/fileName/EditorGameServiceAnalyticData.cs: 0876ec70476607b8d4d53634a7ecd5d1 -> 0fc6f3bf04cc7c89fce9a2c7c7ab285b
+  custom:scripting/monoscript/fileName/ConstructorNotFoundException.Gen.cs: e6b2a3db031db30d51d17e84b1a0df4b -> d5eeea08ebee99ae8f097d0f6c2b88b0
+  custom:scripting/monoscript/fileName/EnvironmentServiceRegistry.cs: a42eeea68835e7f68ff194081c3edf4a -> 87c6dee4ea55850e884c48687d120061
+  custom:scripting/monoscript/fileName/AccessTokensSingleton.cs: 4d0eaab88ac4eb41614b64b1a2fc2065 -> ed21a5edcf5821a4e4c3f640d88a8890
+  custom:scripting/monoscript/fileName/IoUtils.cs: 8cb2820e75371494b08946a997a5ddea -> 407719a7637f4a4931cf4ba6f0c431e9
+  custom:scripting/monoscript/fileName/TagKeys.cs: 8d04446a1607acebe6b7c0e00a856d18 -> 
+  custom:scripting/monoscript/fileName/MetricsHandler.cs: 16fbc9d05cd308d58a4cb300087a14ec -> 
+  custom:scripting/monoscript/fileName/XmlLinkedMethod.cs: b39c1da16ad5fa387fb1f46b49412206 -> 0832a872e8f410f9dbd4e4797775d14c
+  custom:scripting/monoscript/fileName/MethodNotFoundException.Gen.cs: e984737d6979a1950a39e8d61f7754ae -> 0dccde8d1181b58956dff819eeec312c
+  custom:scripting/monoscript/fileName/CachedPayload.cs: 90647cc400823b41df847a6cbfc29026 -> 
+  custom:scripting/monoscript/fileName/ITimeProvider.cs: fb9a1ebcde472403a9a75d0ae223d6ae -> ddd25bd8e3c8be311aae000881753524
+  custom:scripting/monoscript/fileName/IProjectEditorDrawerFactory.cs: 471d3790e94fd05d0901303067c07127 -> 18c5020e4a357b0471f706a6144cefa8
+  custom:scripting/monoscript/fileName/MissingComponent.cs: 5d176c9e686b03d798a173b77baadd60 -> 6fcd30b84d1ca630662778f50cedadd3
+  custom:scripting/monoscript/fileName/Responses.cs: 6386c9be19b49f9166715a4f72878a0d -> cf8e91b141cc85b29c745e415fc1f688
+  custom:scripting/monoscript/fileName/Transient.Gen.cs: a52c167855f6ef48a00b8070b905a2dc -> fb508b42c100a2c07b866a44f9ab3ed0
+  custom:scripting/monoscript/fileName/CorePackageRegistry.cs: 443c586a7d4a4c1e10d29ebaf07eed99 -> 3f8b8a1a754bcbf32e1631fc6067b47f
+  custom:scripting/monoscript/fileName/UnityOrganizationV1.cs: 443ae8f70750ff1e934535b3c3441807 -> 202fa32fa70a6d9b0b74b5c00b1b741c
+  custom:scripting/monoscript/fileName/IQosResults.cs: 2dcbbff99458c7f46766a33ab246fdb9 -> b6881487c0f26ab46e2124c1d0e04307
+  custom:scripting/monoscript/fileName/IAccessTokenObserver.cs: 8fc6bb7dc44e3a7c6bc5ef5f6be23484 -> b63bda9cbc64f15f0d3427f52571574c
+  custom:scripting/monoscript/fileName/IInstallationId.cs: 9e881278ea2da49ddee4eda21cfb0560 -> f04e3188def2f4af24969a3d446782a7
+  custom:scripting/monoscript/fileName/IExternalUserId.cs: 6cffd3972cd70f3c1ea6048bb81b683c -> e86cbc4ee2ec705a01d2d8184f1aa316
+  custom:scripting/monoscript/fileName/AssetUtils.cs: 87ff353fdc85d9fdfb5f09578a4c9edb -> f2faf7ad4b4b5b06d49e576afa8ccb42
+  custom:scripting/monoscript/fileName/IEditorGameServiceAnalyticsSender.cs: 153e64da795727ec8f741e82d38a0d33 -> 16523e3d16356ae30addab5eaf4685a1
+  custom:scripting/monoscript/fileName/IEnvironmentId.cs: df602931975d0853310666bcc7181f4b -> 26e3448d664cf5b5e38101bfbead1ab4
+  custom:scripting/monoscript/fileName/IDiagnostics.cs: fb4a2793e55e4342d0beb032e15dd47e -> 57266d83136060880a8bc854151a2f08
+  custom:scripting/monoscript/fileName/IUnityServices.cs: 89a83f281525d52f5c4ec4b461b2ef4b -> abc5b758eed1a2c05dfbb253b9cdf1d6
+  custom:scripting/monoscript/fileName/TelemetrySender.cs: 00928578ce46ae3da857d3d4ea626399 -> 
+  custom:scripting/monoscript/fileName/InitializationOptions.cs: eb3a310b5fffe56cc45134e50e3506b5 -> a3b098c01b711d197eb5be831c1fe3cb
+  custom:scripting/monoscript/fileName/ResponseDeserializationException.cs: 404c96883bd3dea574dbf493dec67e3f -> ee4bcd8feef77e51dd56d7612403078e
+  custom:scripting/monoscript/fileName/IScopedServiceProvider.Gen.cs: 20e8e713bad7273ff34951d236c50a29 -> a3e3117c2208173e411da686f8072dfc
+  custom:scripting/monoscript/fileName/PackageRegistry.cs: 82c61dd1d88626c13d673f213073dbd5 -> 084618e5fb4441b39eee335cbd095e50
+  custom:scripting/monoscript/fileName/XmlLinkedAssembly.cs: 4794b6c7060435475d59fecd903eb164 -> 997f803bab31374df714b0d6f004c82e
+  custom:scripting/monoscript/fileName/IEnvironments.cs: c150e013a3f3ef8b02e2df03deefaf0e -> c0584c08a0bd557b383eebd7f6ddb36a
+  custom:scripting/monoscript/fileName/DefaultApiRequests.cs: de9a573d7fe2a15aab172803918913cb -> 0c40f474d191c79755786a315c4d3837
+  custom:scripting/monoscript/fileName/CoreMetrics.cs: 3caf7915c6fc5e2c06d416d06d9fc85a -> ba96eafc8557f10e49a5a2dab28be8c2
+  custom:scripting/monoscript/fileName/PlatformSupportUiHelper.cs: e391d3b15f9fef1851f1f7ae6d474204 -> c2fb091feeb92fc6d04201e72415cd6f
+  custom:scripting/monoscript/fileName/IConfigurationProvider.cs: c91f4753267e755333aa0f0d4875fcda -> af9003c2ff2e581cf6d2023a9420f4ca
+  custom:scripting/monoscript/fileName/IMetricsFactory.cs: edd3e83ee6f34844946e6760d70dabf2 -> fde5d2b8b6a1babbe7e5508a35a60c95
+  custom:scripting/monoscript/fileName/ProjectBindRedirectUiConstants.cs: 38cf92d03520444b095aede2a2fc38c4 -> 1d3bd9a52471c7a484b82396440177cc
+  custom:scripting/monoscript/fileName/ChannelToken.cs: fd7e27dc2479b6251898c0d488c58279 -> 749f097d0aecdba9e5864aa66e7c548d
+  custom:scripting/monoscript/fileName/ServiceFlagRequest.cs: 0fead4225786957b154277262f214d17 -> 81cbfe44ade2ec4f46d5579d02db90c8
+  custom:scripting/monoscript/fileName/HttpRequest.cs: 1ac45687457651da96e09c4a481ef254 -> 32f191459fcac54e96d5c4ad496a3ed5
+  custom:scripting/monoscript/fileName/ValidationResult.cs: 8b25b1a6b419d13610a32b6dccee244e -> 12d4a9b1790e80408d1518f479a1a01f
+  custom:scripting/monoscript/fileName/Diagnostic.cs: 503142f1f611f7271fbef4493b0ca75d -> 
+  custom:scripting/monoscript/fileName/HttpServiceConfig.cs: 9bc714145f6cf2696b534ce6220c6654 -> a19e8b39679e0da2413fb1719624f1f2
+  custom:scripting/monoscript/fileName/EditorValueTracker.Gen.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/EditorGameServiceFlagEnabler.cs: c58137dfa8e335f1122a834afec67d99 -> ed4b01161596daf6c007c5cb985797df
+  custom:scripting/monoscript/fileName/ProjectConfigurationBuilderHelper.cs: 9d507618095eb299e64a229680350594 -> f79e2dec68c2a8a55186a3fd4274546b
+  custom:scripting/monoscript/fileName/UnityProjectV1.cs: ebdeaacc02913f1561a4b9260a0b6f5e -> 33ee54c3546ae8cbce557ab2aca1756e
+  custom:scripting/monoscript/fileName/ProjectState.cs: 2e4467109eb2513d5a880793e99a3b50 -> 5da9c4bc1768108d8af5cc6cbfdc9de1
+  custom:scripting/monoscript/fileName/UnityServicesInternal.cs: 3562f86d92d0b1f54f1978ca0c6ddfc4 -> 5ea85354f5b78172e34fac25411fe7cf
+  custom:scripting/monoscript/fileName/PreserveDependencyAttribute.cs: 46bed94a50cb9e7928bbe9bcb971ad28 -> 7b33b3b969409f6a38fb0affb51f2db7
+  custom:scripting/monoscript/fileName/IUnityThreadUtils.cs: c5477dbf4e30b0571eaa2bbab72de4a8 -> 09e8ec6b5955782b75f75b287fbd41f1
+  custom:scripting/monoscript/fileName/ExponentialBackOffRetryPolicy.cs: 51ccc73866dbb9c2cd00659c0688b549 -> 
+  custom:scripting/monoscript/fileName/IConfigurationLoader.cs: 2e89a7105e95d020815581d12affe08b -> 2906069c8520611bdd1356369b0a29f4
+  custom:scripting/monoscript/fileName/IWire.cs: 5fb783c01f11a4104b69d68437f26d82 -> 30c1d87985bae6279501282a5e19ad84
+  custom:scripting/monoscript/fileName/UnityGetEnvironments200Response.cs: fcfc1248dedb9f4ce94bb665d014b719 -> 337f99d16b0b96efb2206d69acad4db0
+  custom:scripting/monoscript/fileName/UnityListProjects200Response.cs: e18f89e980a333e51892e5d4ea083889 -> 428e859b4396ae3112aa4ecacae32fbf
+  custom:scripting/monoscript/fileName/CorePackageInitializer.cs: 6a718cec50e6707466703f23e7e7e901 -> 829d217bce271cb9c1fa63d564b476ec
+  custom:scripting/monoscript/fileName/OperatePackageVersionConfigProvider.cs: bc24edee7cdd8e2804fd6ba7b16f98d2 -> 67b4bf8d5d449d0353b963ad0e103a72
+  custom:scripting/monoscript/fileName/EnvironmentNotFoundException.cs: 8e47c3c60c445e76aa913ff6d23fa08c -> 8f8ecf9219a7a93736afa67d923d561a
+  custom:scripting/monoscript/fileName/IEnvironmentsApi.cs: a52ba41fc6f1d577f07b939453874e2e -> 10309d62b29707db950e5d0457e82d84
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/DependencyTreeInitializeOrderSorter.cs: 7902fff2b64f33d814f57bd8e85ca43d -> 398a0f081d411379f31bc2eb52bbbd21
+  custom:scripting/monoscript/fileName/UserRoleRequest.cs: b672a7c4ac17f4687e6ccd77f363b115 -> ec15cd6950c1f795ee59736c71998788
+  custom:scripting/monoscript/fileName/TokenExchange.cs: 85679881b4f088c71f2430c9f3aa4647 -> bbd1ed03e8e3970b0887123f043469e1
+  custom:scripting/monoscript/fileName/HttpRequestExtensions.cs: 6f14f1ea5c5b0319970c6d437494e354 -> 35b1178ed1fd55cb1029b0abb50d01fc
+  custom:scripting/monoscript/fileName/UnityGetUserPermissions200Response.cs: 4118f8c2affa5e8d46a2c210c942441c -> 7fdf29503cc5301312d984f2af06eb45
+  custom:scripting/monoscript/fileName/EnvironmentIdentifier.cs: c7edaade8c5224bd2b4b84fbad13696a -> 39ee00a0ac13884055f18f6371bacd6d
+  custom:scripting/monoscript/fileName/EnvironmentsConstants.cs: 78c7c3d77ba1ef36139fc9998d4761d0 -> 24e9760363ef695978ba684e5d610a82
+  custom:scripting/monoscript/fileName/CircularDependencyException.cs: d3f1379ed0fbfcf35d560aef048cf332 -> d18ff671dcc1259992ffc320a2699238
+  custom:scripting/monoscript/fileName/IReadOnlyObservable.Gen.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/ProjectBindRedirectPopupUI.cs: 96c683d3fa5ab0602bb1aaec14308708 -> e3fb92bd3ee82c9407053c4d3860bb4f
+  custom:scripting/monoscript/fileName/TelemetryConfig.cs: 34986dd8a09f1cdee5ec6f840e0360ec -> 
+  custom:scripting/monoscript/fileName/CloudEnvironmentConfigProvider.Gen.cs: f4e00c72a2ae7b56313ab85a2b410e7b -> 5a0c9bc3528e508605862cace6052ab9
+  custom:scripting/monoscript/fileName/ScheduledInvocationComparer.cs: 7782fcea9ff594ca5e7009cac967b132 -> 83106d0c8c6b049feeaa7bc89351f333
+  custom:scripting/monoscript/fileName/ExternalUserId.cs: 7c7dbc7d7c51e9cdd5ecec54bd0de4e3 -> 838ec18be418bafff07b93f14174c00c
+  custom:scripting/monoscript/fileName/LinkFileGenerator.cs: 31a29617ed64be653d505e2bec2e91c7 -> 51b5323d52299fec9236d04721b91f22
+  custom:scripting/monoscript/fileName/DefaultApi.cs: c3ee538b57f4ebc9fd8293e2c75a2a35 -> 1d4ada5f7be42c3459105e8a4ff7befa
+  custom:scripting/monoscript/fileName/TelemetryUtils.cs: d398f29a6d6023dcca33df6296fb5095 -> 
+  custom:scripting/monoscript/fileName/EnvironmentAnalytics.cs: 481e49bfd71c898d014e31c234211e91 -> df86ce352df40dfa102b41458fb9f770
+  custom:scripting/monoscript/fileName/ServiceRegistry.cs: e98e44bc5962c77047d2f1cd5292b72c -> 9f2f77edf09fc4d5ffdc5ae250d852d2
+  custom:scripting/monoscript/fileName/EnvironmentAnalyticsSender.cs: b74050acbeb1c990dcb27fcc8bdadaaa -> 8bcdd72c4f4f7ba6fed9617ecb7e992f
+  custom:scripting/monoscript/fileName/ReadOnlyHttpResponse.cs: 79d2905886236ac822e881b58b1ca31a -> cb67b795f50400334c6da0e8ef76361d
+  custom:scripting/monoscript/fileName/ScheduledInvocation.cs: 4f780446d5d14d54dada949cd64da1ef -> 6dd46403260fc3e01309ae7e636c0e8a
+  custom:scripting/monoscript/fileName/UnityProjectNotLinkedException.cs: dedb54ae924668beeeda6fb746bd9eec -> fffb6126e50500c8c570125732d06308
+  custom:scripting/monoscript/fileName/ServicesInitializationException.cs: 0bbc22d6d0861ce8014b91e175b76dd8 -> 905c414eaf6bb9e99e87b7be57e80385
+  custom:scripting/monoscript/fileName/CoreRegistry.cs: 3b89ef1d689176e0672f2ac538247f79 -> f8cefd7d8b5109f3c61c0ba5ed06a2ed
+  custom:scripting/monoscript/fileName/Configuration.cs: 8a619c6297ef27e68d33d76c1de67ff3 -> a9750f7528aacdc11d7888c0eaff44a2
+  custom:scripting/monoscript/fileName/ProductionTokenExchangeUrls.cs: 681fbaf9f15c2d00f37d3898dc6d31d3 -> d51f7b5f35d9e0171f3c69e63ce67736
+  custom:scripting/monoscript/fileName/InvalidJwtException.cs: 7652cbf61cd759f1cb001aab74687f9d -> 44c6d327479bc7179514ecd464e65b5b
+  custom:scripting/monoscript/fileName/IProjectStateRequest.cs: bfce4e6cea9d1b7c6620343ea5a354ea -> 27b27df4e3b68078a5908d7df6fce95f
+  custom:scripting/monoscript/fileName/IEditorGameServiceEnabler.cs: 07fa90e3b41d17b6c366a2824d04b375 -> 9ba91e68464ed1031653bae083d9cbd8
+  custom:scripting/monoscript/fileName/XmlLinkedType.cs: 0f3b0f07ea3dc3aaece77cc37a45d5db -> 879123e42892f87010bef78e341312d0
+  custom:scripting/monoscript/fileName/EnvironmentService.cs: e2ae9c58c9547fa6d3a953ca31320882 -> 22bbc46856bf7062678eb8e6e54cf9a2
+  custom:scripting/monoscript/fileName/EditorGameServiceDashboardHelper.cs: 9b19ce762f47fdf4cbbb923125ce7afc -> ea8538090dcae2327f4c15e2ca056258
+  custom:scripting/monoscript/fileName/DeserializationException.cs: 159fa4363b79815b6f7945cba2639c00 -> 76d207fdb77fb9b4f630a482f86ccf1d
+  custom:scripting/monoscript/fileName/JsonObject.cs: b1633e85357511cbaeb5a705882d2fa7 -> 9ceeaef7b0ccbe23e282545eff3ff92a
+  custom:scripting/monoscript/fileName/ApplyRevertChangeTracker.Gen.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/CollectionExtensions.Gen.cs: 07574e5b44f166e45c61369d77ca33a9 -> aff9dee80b4292d09c09f3acd69a3289
+  custom:scripting/monoscript/fileName/TelemetryConfigKeys.cs: a7ad418808e89631b768f5591eaf63b6 -> 
+  custom:scripting/monoscript/fileName/IComponentRegistry.cs: b082ba4b5e9159b628d6bc11beb7b9c4 -> 31dc7d917392108590a76b6f7b8e718f
+  custom:scripting/monoscript/fileName/IEditorGameService.cs: 1b41c158f05ca9b88e8cf2d20b48b063 -> faa7656610bf6f8463e95c403d6c6e6c
+  custom:scripting/monoscript/fileName/HttpException.cs: 24e8c356e99381147ca0b927156ec975 -> f6827940c1f3397a3e9f5ed27d96f36c
+  custom:scripting/monoscript/fileName/IPackageRegistry.cs: fa9fa646c1a1d6d7c7f015aaa646d8c6 -> 7ed9d4b5a0ae537ff629f057cfa10e76
+  custom:scripting/monoscript/fileName/WebRequest.cs: 527de71f92a546aed6ec4f4ed27dfe95 -> 
+  custom:scripting/monoscript/fileName/EnvironmentSettings.cs: cf4732d1568cc919b863dff361ad2c1b -> e2b98ee836b42374bfa16506e47055ce
+  custom:scripting/monoscript/fileName/IAnalyticsStandardEventComponent.cs: b5680a8550894c59362bcf276192cfb5 -> cf50b12809cbeb8dcfefaee612a9c090
+  custom:scripting/monoscript/fileName/IUnityWebRequestSender.cs: d9b4989e6dc6b90425bccd7306f59d0e -> 
+  custom:scripting/monoscript/fileName/DiagnosticsHandler.cs: 20c8b61d3e3e35194f4a9104f0435070 -> 
+  custom:scripting/monoscript/fileName/ServiceProvider.Gen.cs: 05f769458a2b33869d596f1f03632841 -> fb28411e62c1911933783faa92ae27e4
+  custom:scripting/monoscript/fileName/TelemetryHandler.cs: 9485de402cf5fc3f5849fa4194bac5bd -> 
+  custom:scripting/monoscript/fileName/IChannel.cs: 56b99a9da0b56e3a62c5a03def5e5d0e -> db8ed6536767d05dc3fe7251f4a4dcd3
+  custom:scripting/monoscript/fileName/IAsyncOperation.cs: c25736ddef14bed893f6e649ac8f7b34 -> f56289e88c7dcb628d7e5619c74e7538
+  custom:scripting/monoscript/fileName/XmlLinkerModel.cs: 5ff1a4ada803eec7e5040f83754bab26 -> d4c2817476b9b278a7b7808d61032596
+  custom:scripting/monoscript/fileName/EnvironmentServiceExtensions.cs: 96edbbef4bd431525dc1cd1b6cfe4f58 -> ac6a6c148393eb9a5f8fb75c98af0cdb
+  custom:scripting/monoscript/fileName/IOrganizationHandler.cs: 88427cdc6bb0564d9346a91d38798afd -> f8b346f72bb06934d5f47a4eb5bf2f52
+  custom:scripting/monoscript/fileName/Metrics.cs: c9f79c744819d99c1aa3a4497c670597 -> ff969a3864869c6435b83c963d65cf34
+  custom:scripting/monoscript/fileName/IVivoxTokenProviderInternal.cs: cdd0ccd45177596acf8222151b399a32 -> 8f6eac73831e2d88349c636e0c8277cf
+  custom:scripting/monoscript/fileName/XmlLinkedField.cs: 15700654c699f3cb06c1df3c5d484c5c -> 58331cd1e1b9bc9099ae07f125c40794
+  custom:scripting/monoscript/fileName/IRetryPolicy.cs: 1a1e9609dbc12d7c309921419b808fd9 -> c9ba57383c0678b5a8b1282e1f01a71e
+  custom:scripting/monoscript/fileName/InstallationId.cs: 7aea78abeba55edc00d9b702935a3006 -> 5a83a3939f92e5bc55c8a90ccbe27d51
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 1788.111034 seconds.
-  path: Assets/InventoryMaster/New Terrain.asset
-  artifactKey: Guid(d278f3ff7a1630249abdfa7b68288d09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InventoryMaster/New Terrain.asset using Guid(d278f3ff7a1630249abdfa7b68288d09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df3aa181a07338a87c84e23e0784e8eb') in 0.102568 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 4.320334 seconds.
-  path: Assets/InventoryAsset/Icons/496_RPG_icons/A_Armor04.png
-  artifactKey: Guid(b30bbdea7cb1c2149b869249a8949e77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InventoryAsset/Icons/496_RPG_icons/A_Armor04.png using Guid(b30bbdea7cb1c2149b869249a8949e77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13f7cab94cf8de6e84e84a2a65d2097a') in 0.075735 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000091 seconds.
-  path: Assets/InventoryAsset/Icons/496_RPG_icons/A_Shoes02.png
-  artifactKey: Guid(6a411f8ab3ee58143a8e800c025b0ccf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InventoryAsset/Icons/496_RPG_icons/A_Shoes02.png using Guid(6a411f8ab3ee58143a8e800c025b0ccf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8449adc6ce222296f712dfe298a9376d') in 0.018063 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/InventoryAsset/Icons/496_RPG_icons/A_Armour01.png
-  artifactKey: Guid(f5cdc7a4591fe084abd84cb5f19b0746) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InventoryAsset/Icons/496_RPG_icons/A_Armour01.png using Guid(f5cdc7a4591fe084abd84cb5f19b0746) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '966c71599799c64470aadb60a4a6f366') in 0.021008 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/InventoryAsset/Icons/496_RPG_icons/A_Clothing01.png
-  artifactKey: Guid(40387f735e8533547815a1a2371b7faf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InventoryAsset/Icons/496_RPG_icons/A_Clothing01.png using Guid(40387f735e8533547815a1a2371b7faf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80d910c208d773f27b65dcfbec70918b') in 0.015867 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/InventoryAsset/Icons/496_RPG_icons/A_Armour03.png
-  artifactKey: Guid(d9301f97f85aa60448bf22d3ad577802) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InventoryAsset/Icons/496_RPG_icons/A_Armour03.png using Guid(d9301f97f85aa60448bf22d3ad577802) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8576a52c251aedffa45c1c90991183ec') in 0.020363 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 4.083151 seconds.
-  path: Assets/InventoryAsset/Inventory/InventoryItem/AddItem.prefab
-  artifactKey: Guid(c5058b0ce395ecf4586cf9a86a35343b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InventoryAsset/Inventory/InventoryItem/AddItem.prefab using Guid(c5058b0ce395ecf4586cf9a86a35343b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd0a847c58b232fdab6f1471444483f4') in 0.014316 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 6
-========================================================================
-Received Import Request.
-  Time since last request: 3.658323 seconds.
-  path: Assets/InventoryAsset/Inventory/InventoryItem/InventoryItemScript/Editor
-  artifactKey: Guid(2a180b2dd2876444ea8fd5ff70a74f2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InventoryAsset/Inventory/InventoryItem/InventoryItemScript/Editor using Guid(2a180b2dd2876444ea8fd5ff70a74f2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfe4dacf0df0965b0cee9d73833de203') in 0.000530 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 4.089654 seconds.
-  path: Assets/InventoryAsset/Inventory/InventoryItem/InventoryItemScript
-  artifactKey: Guid(d0bb3aca84eb3ba4ab15fc953388a478) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InventoryAsset/Inventory/InventoryItem/InventoryItemScript using Guid(d0bb3aca84eb3ba4ab15fc953388a478) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99d7c9d84b3e55759b852d9ccf82dbf6') in 0.000800 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 7.330640 seconds.
-  path: Assets/InventoryAsset/InventoryUI/Slots/ItemHolder.prefab
-  artifactKey: Guid(1c44132505c5b1f42b38381654fa5f6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InventoryAsset/InventoryUI/Slots/ItemHolder.prefab using Guid(1c44132505c5b1f42b38381654fa5f6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73ad91e7c34b66e7331dd92558433910') in 0.139543 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 20
-========================================================================
-Received Import Request.
-  Time since last request: 16.611133 seconds.
-  path: Assets/InventoryAsset/Scenes/SampleScene/InventorySampleScene.unity
-  artifactKey: Guid(0c2db5eeff4168c48b61aafb066f21a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InventoryAsset/Scenes/SampleScene/InventorySampleScene.unity using Guid(0c2db5eeff4168c48b61aafb066f21a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccf07a3bdc908e0dd13401599cb87561') in 0.000892 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 12.362424 seconds.
-  path: Assets/InventoryAsset/InventoryUI/Slots/SlotSprites/InventoryRect.png
-  artifactKey: Guid(ad6ad57f2b8c4ea47b2abe4559d4a986) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InventoryAsset/InventoryUI/Slots/SlotSprites/InventoryRect.png using Guid(ad6ad57f2b8c4ea47b2abe4559d4a986) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a88cec2e26d15ef64e1bd197c8b61c66') in 0.065154 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000070 seconds.
-  path: Assets/InventoryAsset/InventoryUI/Slots/SlotSprites/Slot_White_Brown.psd
-  artifactKey: Guid(c199c8a3d49bb7b44acb592d46c2e2ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InventoryAsset/InventoryUI/Slots/SlotSprites/Slot_White_Brown.psd using Guid(c199c8a3d49bb7b44acb592d46c2e2ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '506870926b49922056463eee55fc286d') in 0.047669 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 23.550943 seconds.
-  path: Assets/InventoryMaster/Fonts/American Purpose.otf
-  artifactKey: Guid(d8bee09f4790983418e364bc88d834d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InventoryMaster/Fonts/American Purpose.otf using Guid(d8bee09f4790983418e364bc88d834d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48273a13c176a9970ca207c23d05c4e8') in 0.089208 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 4
-========================================================================
-Received Import Request.
-  Time since last request: 0.000054 seconds.
-  path: Assets/InventoryMaster/Fonts/American Purpose STRIPE 1 Normal.ttf
-  artifactKey: Guid(024da2176b6bbd74d8def586930a1233) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InventoryMaster/Fonts/American Purpose STRIPE 1 Normal.ttf using Guid(024da2176b6bbd74d8def586930a1233) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d3b720e684a693d8cb21e576e064dd5') in 0.019301 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 4
-========================================================================
-Received Import Request.
-  Time since last request: 0.000058 seconds.
-  path: Assets/InventoryMaster/Fonts/American Purpose STRIPE 1 Normal.otf
-  artifactKey: Guid(bbf329630f0c42246b2cf9e13031b8d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InventoryMaster/Fonts/American Purpose STRIPE 1 Normal.otf using Guid(bbf329630f0c42246b2cf9e13031b8d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5431347acc1c062d4374fc9fcac683b4') in 0.017903 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 4
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/InventoryMaster/Fonts/American Purpose STRIPE 1 Bold.otf
-  artifactKey: Guid(e731e4d8435e7e945936240a1ecf0f56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InventoryMaster/Fonts/American Purpose STRIPE 1 Bold.otf using Guid(e731e4d8435e7e945936240a1ecf0f56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a60cacd470f93876354b41296b503f12') in 0.021806 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 4
-========================================================================
-Received Import Request.
-  Time since last request: 2.650938 seconds.
-  path: Assets/InventoryMaster/Examples/New Terrain.asset
-  artifactKey: Guid(d9c9f362f87ac8343b9d0dfd828ea6d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InventoryMaster/Examples/New Terrain.asset using Guid(d9c9f362f87ac8343b9d0dfd828ea6d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b7775c2c125fd572351b02180425a85') in 0.085669 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 2.162807 seconds.
-  path: Assets/InventoryMaster/Resources/AttributeDatabase.asset
-  artifactKey: Guid(3c7075d4212dc7b4f95a3be8a2519b81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InventoryMaster/Resources/AttributeDatabase.asset using Guid(3c7075d4212dc7b4f95a3be8a2519b81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97c2279da62814b3d1bcf2efda85a5a1') in 0.002216 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/InventoryMaster/Resources/InputManager.asset
-  artifactKey: Guid(702008cd9ccb2de4b8c666e42b2c1efd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InventoryMaster/Resources/InputManager.asset using Guid(702008cd9ccb2de4b8c666e42b2c1efd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '502d96faa5708c1e629f8a1831d52d8b') in 0.002019 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000070 seconds.
-  path: Assets/InventoryMaster/Resources/ItemDatabase.asset
-  artifactKey: Guid(964f317a23cc9f0418bb3778fccd8ebb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InventoryMaster/Resources/ItemDatabase.asset using Guid(964f317a23cc9f0418bb3778fccd8ebb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6287c01ece2583782839df52010ed3f3') in 0.002829 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 1.710750 seconds.
-  path: Assets/InventoryMaster/Resources/Prefabs/Canvas - Inventory.prefab
-  artifactKey: Guid(9d5134176cec6254a90845c160aaed68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InventoryMaster/Resources/Prefabs/Canvas - Inventory.prefab using Guid(9d5134176cec6254a90845c160aaed68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb2a3aa2b24f33b856f5780375463fc0') in 0.004121 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 6
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/InventoryMaster/Resources/Prefabs/EventSystem.prefab
-  artifactKey: Guid(7ee7c9d39e4c31c4394b96b7dfb633be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InventoryMaster/Resources/Prefabs/EventSystem.prefab using Guid(7ee7c9d39e4c31c4394b96b7dfb633be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f597bd770f4aa207e686bf69133b29d') in 0.004947 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 7
-========================================================================
-Received Import Request.
-  Time since last request: 0.000322 seconds.
-  path: Assets/InventoryMaster/Resources/Prefabs/Item.prefab
-  artifactKey: Guid(8beb0b8751c81ea4e9f32ea69a6856c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InventoryMaster/Resources/Prefabs/Item.prefab using Guid(8beb0b8751c81ea4e9f32ea69a6856c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fd77ef639cce1ae01a6833f5b43ce55') in 0.007666 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 28
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/InventoryMaster/Resources/Prefabs/Panel - Hotbar.prefab
-  artifactKey: Guid(003aff90a41c3cc4eb5819b6c2de55fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InventoryMaster/Resources/Prefabs/Panel - Hotbar.prefab using Guid(003aff90a41c3cc4eb5819b6c2de55fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6370ebd14740986f9b4f8787d421516c') in 0.006549 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 52
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/InventoryMaster/Resources/Prefabs/Panel - EquipmentSystem.prefab
-  artifactKey: Guid(c09ae6926a2cd6148958f03f14572c54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InventoryMaster/Resources/Prefabs/Panel - EquipmentSystem.prefab using Guid(c09ae6926a2cd6148958f03f14572c54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb5603d13933eb1d1381041b096eb3cd') in 0.005988 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 27
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/InventoryMaster/Resources/Prefabs/Panel - CraftSystem.prefab
-  artifactKey: Guid(1dfb12bfd7dc77649953ab74c5ce6c50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InventoryMaster/Resources/Prefabs/Panel - CraftSystem.prefab using Guid(1dfb12bfd7dc77649953ab74c5ce6c50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '980a12a3c42d651792903a67a1d59fbc') in 0.017848 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 88
-========================================================================
-Received Import Request.
-  Time since last request: 1.177904 seconds.
-  path: Assets/InventoryMaster/Resources/EditorWindowTextures/email-icon.png
-  artifactKey: Guid(4125d53d60e7e71459dcfcd7e756c89b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InventoryMaster/Resources/EditorWindowTextures/email-icon.png using Guid(4125d53d60e7e71459dcfcd7e756c89b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0c74a17df08b1e73631b2efcb045542') in 0.026731 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000149 seconds.
-  path: Assets/InventoryMaster/Resources/EditorWindowTextures/headTexture.jpg
-  artifactKey: Guid(f614703724ebf39428e4cba870efadbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InventoryMaster/Resources/EditorWindowTextures/headTexture.jpg using Guid(f614703724ebf39428e4cba870efadbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d672ed40cb906400c05f269a756c36c') in 0.055179 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 2.420584 seconds.
-  path: Assets/InventoryMaster/Textures/A_Armor04.png
-  artifactKey: Guid(d13012f4abce7b241900001bf716f66e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InventoryMaster/Textures/A_Armor04.png using Guid(d13012f4abce7b241900001bf716f66e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a988a09d83db0b3c524ce23dc3f5dedb') in 0.050719 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/InventoryMaster/Textures/A_Shoes01.png
-  artifactKey: Guid(3677eacbc4390644e97df27f50b96587) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InventoryMaster/Textures/A_Shoes01.png using Guid(3677eacbc4390644e97df27f50b96587) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2b42bb3a17246d93e8cd53e161ba3f1') in 0.040684 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000279 seconds.
-  path: Assets/InventoryMaster/Textures/A_Armour01.png
-  artifactKey: Guid(fcd8bd2db18e92d42a7d14fc0e395888) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InventoryMaster/Textures/A_Armour01.png using Guid(fcd8bd2db18e92d42a7d14fc0e395888) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08985a62ed20c0efef910b0e54b0ae3b') in 0.037254 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000052 seconds.
-  path: Assets/InventoryMaster/Textures/A_Clothing02.png
-  artifactKey: Guid(34ce9c8524e37f549bc4de2bbdd96429) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InventoryMaster/Textures/A_Clothing02.png using Guid(34ce9c8524e37f549bc4de2bbdd96429) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b710c411f1892468ef68d806ea0e065') in 0.043296 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 13.082911 seconds.
-  path: Assets/InventoryMaster/Examples/Example.unity
-  artifactKey: Guid(a2f811dfcbbd60744a806d639f42f04e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InventoryMaster/Examples/Example.unity using Guid(a2f811dfcbbd60744a806d639f42f04e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '003e6130de93dcd57331a07dd20b9e5a') in 0.000979 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 40.089447 seconds.
-  path: Assets/InventoryMaster/Textures/Example Inventory/2/Inventory_Panel.png
-  artifactKey: Guid(80ad07ba3cdf62f4cac7ad6313e1a6f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InventoryMaster/Textures/Example Inventory/2/Inventory_Panel.png using Guid(80ad07ba3cdf62f4cac7ad6313e1a6f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3af6e214911ea0239ae09ab598640ff') in 0.047763 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+  custom:scripting/monoscript/fileName/UnityWebRequestUtils.cs: f42922cd8e0b9730ef67d24470c2febb -> f709ddaaeb44d62e1a53fe224983d54c
+  custom:scripting/monoscript/fileName/FactoryUtils.cs: a362e0d1d8669d12721d8991317d81e6 -> 
+  custom:scripting/monoscript/fileName/DependencyTree.cs: a4aa2e4c59b376798594df0b1bc290ca -> 0bd2915409b5c0af8089da1663502e47
+  custom:scripting/monoscript/fileName/FileCachePersister.cs: 11e7c2e3490747e4f4381c78d3ff9512 -> 
+  custom:scripting/monoscript/fileName/AsyncOperation.cs: 423ec9a6f165ccb3825f090f93fe0089 -> f23cc551eab7049146420a4196093425
+  custom:scripting/monoscript/fileName/ICachePersister.cs: 90647cc400823b41df847a6cbfc29026 -> 
+  custom:scripting/monoscript/fileName/ServiceInstallationListener.cs: 285633d804b2b3fb8f8d54fb9f48eda3 -> 4f550d886426ad05d9cb021f02f3b5c8
+  custom:scripting/monoscript/fileName/UnityAddressV1.cs: e9e6aded68f28fbd141b417ad0a09546 -> 4d4ba30b341c7e72810f3c36b5914fa5
+  custom:scripting/monoscript/fileName/IGatewayTokens.cs: 98f6c5c0de04f3756d66c649a3a7dc44 -> af8d58613a9fd459a444ee8b327072b0
+  custom:scripting/monoscript/fileName/ConfigurationUtils.cs: f47056867a4b1474ec21c34c17319e21 -> e57894058b136700ef3ea680c0b15031
+  custom:scripting/monoscript/fileName/PackageConfig.cs: 05095ce49b22d1fe553d074a1f833b62 -> 6c65665380cc70d71f22e981e56d92cf
+  custom:scripting/monoscript/fileName/IInitializablePackage.cs: 4a8ed8eae523d67d5972c748b4c330e3 -> 7a2afaa327b6f2c8c3b73c00855d936d
+  custom:scripting/monoscript/fileName/AnalyticsOptionsExtensions.cs: 7c87457f9e187fa0188d12c2ce44e513 -> 61b53e23187fa8065622d09b0f304596
+  custom:scripting/monoscript/fileName/UnityOrganizationMemberV1.cs: a2edd005eef66e9b1eea6463a383f466 -> 29203c4e087d3ba2203081bd2717405e
+  custom:scripting/monoscript/fileName/UnityServices.cs: c93278a8fe51b5b7c93891b7ab4fef13 -> 53288f4d4ff1211eb125ba005d646505
+  custom:scripting/monoscript/fileName/EditorGameServiceAnalyticsSender.cs: 1e0246d3228ccf197bf5d89194ccd372 -> b1482946807e244901e59f571cc456ff
+  custom:scripting/monoscript/fileName/IAccessToken.cs: 0af7feb46e29577f34ff39e80c34df75 -> 359704d6f9862ce7f7142f3c9f3827a0
+  custom:scripting/monoscript/fileName/VisualElementHelper.cs: f18a2bd6b0c264edcf7f74876a4a900d -> 0b84949c228ae121ca9bc47ce2ce3ccc
+  custom:scripting/monoscript/fileName/EnvironmentSelector.cs: 0309af6d481b3729ed54744ae9f1f25e -> c98b9a09bbd4b5a80fea1f579cd65362
+  custom:scripting/monoscript/fileName/IAnalyticsUserId.cs: 6ba662e074f1855ecdcfbf3caa00a967 -> c2cc7c28fd557b3f55cdf068b0502818
+  custom:scripting/monoscript/fileName/JsonHelpers.cs: e1d3e843a02d90631387cc15a71670b8 -> 8837ad713480b6b5528a3b03a0d76fa1
+  custom:scripting/monoscript/fileName/UnityCreateEnvironmentRequest.cs: 019b3f601cf80569bb21ece8aae3839f -> a9b0f13e8545f9920554463818374956
+  custom:scripting/monoscript/fileName/DefaultCdnConfiguredEndpoint.cs: 773878c9469065572c675d073e9615b0 -> 624837102d8bef2a2323b0b82727af95
+  custom:scripting/monoscript/fileName/ServiceFlagEndpoint.cs: 3b9195afc5bdfff65b0a7af79337df4f -> 95ebbb4e72d70a377056cbf3d7a7020c
+  custom:scripting/monoscript/fileName/EventBinding.Gen.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/Scope.Gen.cs: 73cd25ebc996c86fbb2cbbdc67b214d7 -> 409412ebac5387d01283cada94af8d59
+  custom:scripting/monoscript/fileName/SliderToggleUiHelper.cs: d3bd53bcac8b43d30bd1d3c6683a6789 -> 297bb968c6a98e033483e5885bc5e941
+  custom:scripting/monoscript/fileName/ITelemetryEvent.cs: 1eb711296be42c74b8bf8ddc50c8fddc -> 

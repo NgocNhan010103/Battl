@@ -1,0 +1,8 @@
+id	name	decription	rewarded	target	questType	active
+0 	Login	Login a day	200	1	Daily	10
+1	Kill Zombie Basic	Kill 5 zombie Basic	200	5	Daily	15
+2	Kill 5 types of zombies	Kill 5 different types of zombies in 1 level	500	5	Daily	15
+3	Buy 5 types of Plants	Buy 5 different types of Plants in 1 round	500	5	Daily	20
+4	Login 7 day	Login 7 day	1000	7	Weekly	10
+5	Kill Zombie	Kill 100 Zombie Dog	1000	100	Weekly	15
+6	Kill Zombie	Kill 50 Zombie Basic	800	50	Weekly	15
