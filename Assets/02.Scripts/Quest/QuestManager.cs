@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.PackageManager.Requests;
@@ -28,15 +29,13 @@ public class QuestManager : MonoBehaviour
     public GameObject DailyQuest;
     public GameObject WeeklyQuest;
 
-    [SerializeField] GameObject blackFrameDaily;
-    [SerializeField] GameObject blackFrameWeekly;
-    [SerializeField] Transform contentDaily;
-    [SerializeField] Transform contentWeekly;
+    [SerializeField]public Transform contentDaily;
+    [SerializeField]public Transform contentWeekly;
     [SerializeField] GameObject prf;
 
     [Header("List Task")]
-    [SerializeField] List<QuestData> dailyQ;
-    [SerializeField] List<QuestData> weeklyQ;
+    [SerializeField]public List<QuestData> dailyQ;
+    [SerializeField]public List<QuestData> weeklyQ;
 
     private float itemHeight;
     public float itemSpacing = 0.5f;
@@ -45,8 +44,21 @@ public class QuestManager : MonoBehaviour
     {
         Instance = this;
 
-        dailyQ = CSVReader.instance.listDaillyQ;
-        weeklyQ = CSVReader.instance.listWeeklyQ;
+
+        if (RealTime.instance.IsNewDay())
+        {
+            UserData.data.QuestesDaily = CSVReader.instance.listDaillyQ;
+            PointActive.Instance.ResetDaily();
+            UserData.SaveData();
+        }
+        if (RealTime.instance.IsNewWeek())
+        {
+            UserData.data.QuestesWeekly = CSVReader.instance.listWeeklyQ;
+            UserData.SaveData();
+        }
+
+        dailyQ = UserData.data.QuestesDaily;
+        weeklyQ = UserData.data.QuestesWeekly;
     }
 
 
@@ -54,12 +66,6 @@ public class QuestManager : MonoBehaviour
     {
         DailyQuest.SetActive(true);
         LoadQuest(dailyQ, contentDaily);
-    }
-
-    private void OnDisable()
-    {
-        blackFrameDaily.SetActive(false);
-        blackFrameWeekly.SetActive(false);
     }
 
     public void Close()

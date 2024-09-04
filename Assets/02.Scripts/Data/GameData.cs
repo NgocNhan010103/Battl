@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,7 +13,11 @@ public class UserDeepData
     public int Coins;
     public int Diamonds;
     public int Day;
-   
+    public int PointDActive;
+    public int PointWActive;
+    public DateTime lastCheckedDate;
+    public List<QuestData> QuestesDaily;
+    public List<QuestData> QuestesWeekly;
 }
 
 [System.Serializable]
@@ -91,6 +96,7 @@ public class QuestData
 public class UserData
 {
     public static UserDeepData data;
+
 
     public static void SaveData()
     {

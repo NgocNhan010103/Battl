@@ -18,7 +18,6 @@ public class UIQuest : MonoBehaviour
 
     public Action Complete;
 
-
     private void OnEnable()
     {
         reward.interactable = false;
@@ -70,9 +69,22 @@ public class UIQuest : MonoBehaviour
 
     public void Claim()
     {
+        UserData.data.PointDActive += data.PointActive;
+        PointActive.Instance.CheckPointActive(data.QType);
         reward.interactable = false;
         data.IsClaimed = true;
-        data.QState = QuestState.Claimed; 
+        data.QState = QuestState.Claimed;
+
+        foreach(var quest in UserData.data.QuestesDaily)
+        {
+            if (quest.ID == data.ID)
+            {
+                quest.IsClaimed = true;
+                quest.QState = QuestState.Claimed;
+            }
+
+        }
         QuestManager.Instance.Claim( data.QType);
+        UserData.SaveData();
     }
 }
